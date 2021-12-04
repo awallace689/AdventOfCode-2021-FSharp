@@ -10,7 +10,7 @@ let internal loadInputFile (fileName : string) (pathPrefix : Option<string>) : s
         Seq.takeWhile (fun line -> line <> null) fileSeq
         
     match (fileName, pathPrefix) with
-    | fileName, Some(pathPrefix) -> 
+    | fileName, Some(pathPrefix) ->
         readFile (pathPrefix + fileName)
     | fileName, None ->
         readFile fileName

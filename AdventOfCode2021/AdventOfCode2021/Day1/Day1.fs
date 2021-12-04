@@ -23,7 +23,7 @@ module P1 =
 module P2 =
    type internal Window = int * int * int
    
-   let rec internal getWindows (lines : string list): Window list=
+   let rec internal getWindows (lines : string list): Window list =
        match lines with
        | x::y::[z] -> Window(int x, int y, int z)::[]
        | x::y::z::xs -> Window(int x, int y, int z)::getWindows(y::z::xs)
