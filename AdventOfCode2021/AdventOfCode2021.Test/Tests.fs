@@ -29,7 +29,7 @@ let Day2P1_Answer_Correct () =
 [<Test>]
 let Day2P2_Answer_Correct () =
     Assert.That(
-        Day2.P1.run (),
+        Day2.P2.run (),
         Is.EqualTo(1848454425),
         "Day2P2 - correct final position of submarine, calculated w/ aim"
     )
